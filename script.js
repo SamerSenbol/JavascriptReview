@@ -1,10 +1,11 @@
-let menuItem = document.getElementById("menu").getElementsByTagName("li");
-console.log(menuItem);
+var menuItem = document.getElementById("menu").getElementsByTagName("li")
+var headLine = document.getElementById("text")
 
+console.log(headLine)
 for(i=0; i<menuItem.length; i++){
-menuItem[i].addEventListener("click", selectItem);
+    menuItem[i].addEventListener("click", selectItem)
 }
 
 function selectItem(){
-    alert("selected");
+    headLine.innerHTML = "New head"
 }
